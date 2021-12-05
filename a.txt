@@ -1,0 +1,25 @@
+CSS and HTML Live hover code. 
+
+https://stackoverflow.com/questions/2117046/how-to-show-live-preview-in-a-small-popup-of-linked-page-on-mouse-over-on-link/16625709
+
+.box{
+    display: none;
+    width: 100%;
+}
+
+a:hover + .box,.box:hover{
+    display: block;
+    position: relative;
+    z-index: 100;
+}
+Live previews for <a href="https://en.wikipedia.org/">Wikipedia</a>
+  <div class="box">
+     <iframe src="https://en.wikipedia.org/" width = "500px" height = "500px">
+     </iframe>
+  </div> 
+and <a href="https://www.jquery.com/">JQuery</a>
+  <div class="box">
+     <iframe src="https://www.jquery.com/" width = "500px" height = "500px">
+     </iframe>
+  </div> 
+will appear when these links are moused over.
