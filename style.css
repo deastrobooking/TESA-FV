@@ -31,7 +31,31 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 }
-
+.comment {
+  float: left;
+  width: 100%;
+  height: auto;
+  padding-top: 5px;
+}
+.textinput {
+  float: left;
+  width: 99%;
+  min-height: 75px;
+  outline: none;
+  resize: none;
+  border: 1px solid gray;
+}
+.tiptext {
+    color:#069; 
+    cursor:pointer;
+}
+.description {
+    display:none;
+    position:absolute;
+    border:1px solid #000;
+    width:400px;
+    height:400px;
+}
 ol, ul {
 	list-style: none;
 }

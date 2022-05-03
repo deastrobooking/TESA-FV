@@ -10,6 +10,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="style.css" />
+    <script src="https://www.desmos.com/api/v1.6/calculator.js?apiKey=dcb31709b452b1cf9dc26972add0fda6"></script>
 	</head>
 	<body>
 		<div id="page-wrapper">
@@ -177,12 +178,15 @@
 
 								<!-- Blurb -->
 									<section>
-										<h2>An Informative Text Blurb</h2>
+										<h2>Desmos Graphing Calculator</h2>
 										<p>
-											Duis neque nisi, dapibus sed mattis quis, rutrum accumsan sed. Suspendisse eu
-											varius nibh. Suspendisse vitae magna eget odio amet mollis. Duis neque nisi,
-											dapibus sed mattis quis, sed rutrum accumsan sed. Suspendisse eu varius nibh
-											lorem ipsum amet dolor sit amet lorem ipsum consequat gravida justo mollis.
+											<div class ="container"  id="calculator" style="width: 700px; height: 400px;"></div>
+
+                      <script >
+                      var elt = document.getElementById('calculator');
+                      var calculator = Desmos.GraphingCalculator(elt);
+                      calculator.setExpression({id:'graph1', latex:'y=x^2'});
+                      </script>
 										</p>
 									</section>
 
